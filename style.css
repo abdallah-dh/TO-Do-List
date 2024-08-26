@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(248, 196, 128);
+    width: 600px;
+    margin: 100px auto ;
+    padding: 50px ;
+    border-radius: 20px;
+
+    
+}
+section{
+    background: rgb(50,55,70);
+     background: linear-gradient(90deg, rgba(50,55,70,1) 0%, rgba(50,56,74,1) 9%, rgba(49,61,116,0.4542191876750701) 100%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+    
+    padding: 10px;
+}
+.lign1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(32, 17, 247);
+}
+.lign1 img{
+    height: 40px;
+}
+.tasks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+input{
+    border-radius: 30px;
+    outline: 0;
+    border: 0px solid white;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(247, 221, 188);
+    
+    
+}
+button{
+    border: 0px solid white;
+    outline: 0;
+    width: 100px;
+    height: 42px;   
+    border-radius: 30px;
+    position: relative;
+    right: 101px;
+    background-color: orangered;
+    color: white;
+}
+.ajouter{
+    display: inline-block;
+    margin: 30px;
+    margin-left: 90px;
+    width: 80%;
+}
+ul{
+    margin: 10px;
+    list-style: none;
+    font-size: 20px;
+    position: relative;
+
+
+}
+
+li{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;  
+  
+    padding-left: 60px;
+  
+
+
+}
+ul li::before {
+    content: ' ';
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    left: 10px;
+
+}
+ul li.cheked{
+    text-decoration: line-through;
+
+}
+ul li.cheked::before{
+
+    background-image: url(images/checked.png);
+  
+}
+ul li span{
+    position: absolute;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+ul li span:hover{
+    cursor: pointer;
+    background-color: rgb(179, 176, 176);
+    border-radius: 100%;
+
+}
